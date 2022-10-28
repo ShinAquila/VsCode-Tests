@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Basic Calculator</title>
+    <script>
+        function display(value){
+            document.getElementById("result").value += value;
+            }
+
+        function calculate(){
+            var p = document.getElementById("result").value;
+            var q = eval(p);
+            document.getElementById("result").value = q;
+            }
+
+        function clearDis() {
+            document.getElementById("result").value = "";
+            }
+    </script>
+    <link rel="stylesheet" href="calculatorstyle.css">
+</head>
+
+<body>
+    <center>
+        <h1>
+            Basic Calculator
+        </h1>
+    </center>
+
+    <table class = "calculator" >
+        <tr>
+            <td colspan = "4"><input class="inputDis" type="text" id="result"></td>
+        </tr>
+
+        <tr>
+            <td><button class="button" onclick="display('7')">7</button></td>
+            <td><button class="button" onclick="display('8')">8</button></td>
+            <td><button class="button" onclick="display('9')">9</button></td>
+            <td><button class="button" onclick="display('+')" style="background-color: rgb(0, 100, 0);">+</button></td>
+        </tr>
+    
+        <tr>
+            <td><button class="button" onclick="display('4')">4</button></td>
+            <td><button class="button" onclick="display('5')">5</button></td>
+            <td><button class="button" onclick="display('6')">6</button></td>
+            <td><button class="button" onclick="display('-')" style="background-color: rgb(0, 100, 0);">-</button></td>
+        </tr>
+
+        <tr>
+            <td><button class="button" onclick="display('1')">1</button></td>
+            <td><button class="button" onclick="display('2')">2</button></td>
+            <td><button class="button" onclick="display('3')">3</button></td>
+            <td><button class="button" onclick="display('/')" style="background-color: rgb(0, 100, 0);">/</button></td>
+        </tr>
+
+        <tr>
+            <td><button class="button" onclick="display('0')">0</button></td>
+            <td><button class="button" onclick="display('.')">.</button></td>
+            <td><button class="button" onclick="display('%')">%</button></td>
+            <td><button class="button" onclick="display('*')" style="background-color: rgb(0, 100, 0);">*</button></td>
+            
+        </tr>
+
+        <tr>
+            <td colspan="3"><button class="button" onclick="calculate()" style="background-color: #8b8b8b;">=</button></td>
+            <td colspan="2"><button class="button" onclick="clearDis()" style="background-color: #8b8b8b;">AC</button></td>
+        </tr>
+
+    </table>
+</body>
+
+
+
+
+
+
+
+
+
+
+

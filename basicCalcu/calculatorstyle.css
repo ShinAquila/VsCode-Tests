@@ -1,0 +1,33 @@
+body{
+    background-color: grey;
+}
+.calculator {
+ padding: 10px;
+ height: 380px;
+ width: 410px;
+ margin: auto;
+ background-color: #1f1f1f;
+ box-shadow: 0px 1px 10px 2px black;
+ border-radius: 1em;
+}
+.inputDis {
+ background-color: #dcdbe1;
+ border: solid black 0.5px;
+ border-radius: 5px;
+ width: 98%;
+ height: 65%;
+ font-size: 33px;
+}
+.button {
+ background-color: #278f52;
+ color: white;
+ font-size: large;
+ border: solid black 0.5px;
+ width: 100%;
+ border-radius: 5px;
+ height: 70%;
+}
+.button:active {
+ background: #e5e5e5;
+ box-shadow: inset 0px 0px 5px #c1c1c1;
+}
