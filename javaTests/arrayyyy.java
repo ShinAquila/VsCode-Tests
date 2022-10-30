@@ -20,9 +20,9 @@ public class arrayyyy {
 
         int sum = 0;
         for(int newNum : a){
-            sum = sum+newNum;
-            
+            sum = sum+newNum;   
         }
+        
         System.out.println("Total: "+sum);
         System.exit(0);
     }
