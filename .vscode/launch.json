@@ -1,0 +1,112 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch hello",
+            "request": "launch",
+            "mainClass": "ProjectTest.hello",
+            "projectName": "VS_3d956f6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch arrayyyy",
+            "request": "launch",
+            "mainClass": "arrayyyy",
+            "projectName": "VS_3d956f6"
+        },
+        {
+            "type": "java",
+            "name": "Launch calcu",
+            "request": "launch",
+            "mainClass": "calcu",
+            "projectName": "VS_3d956f6"
+        },
+        {
+            "type": "java",
+            "name": "Launch classMainUwU",
+            "request": "launch",
+            "mainClass": "classMethodTests.classMainUwU",
+            "projectName": "VS_3d956f6"
+        },
+        {
+            "type": "java",
+            "name": "Launch doWhile",
+            "request": "launch",
+            "mainClass": "doWhile",
+            "projectName": "VS_3d956f6"
+        },
+        {
+            "type": "java",
+            "name": "Launch hello",
+            "request": "launch",
+            "mainClass": "hello",
+            "projectName": "VS_3d956f6"
+        },
+        {
+            "type": "java",
+            "name": "Launch incAdd",
+            "request": "launch",
+            "mainClass": "incAdd",
+            "projectName": "VS_3d956f6"
+        },
+        {
+            "type": "java",
+            "name": "Launch inrange",
+            "request": "launch",
+            "mainClass": "inrange",
+            "projectName": "VS_3d956f6"
+        },
+        {
+            "type": "java",
+            "name": "Launch loopuwu",
+            "request": "launch",
+            "mainClass": "loopuwu",
+            "projectName": "VS_3d956f6"
+        },
+        {
+            "type": "java",
+            "name": "Launch orderwhile",
+            "request": "launch",
+            "mainClass": "orderwhile",
+            "projectName": "VS_3d956f6"
+        },
+        {
+            "type": "java",
+            "name": "Launch printf",
+            "request": "launch",
+            "mainClass": "printf",
+            "projectName": "VS_3d956f6"
+        },
+        {
+            "type": "java",
+            "name": "Launch trycatchInt",
+            "request": "launch",
+            "mainClass": "trycatchInt",
+            "projectName": "VS_3d956f6"
+        },
+        {
+            "type": "java",
+            "name": "Launch trycatchString",
+            "request": "launch",
+            "mainClass": "trycatchString",
+            "projectName": "VS_3d956f6"
+        },
+        {
+            "type": "java",
+            "name": "Launch whileUwU",
+            "request": "launch",
+            "mainClass": "whileUwU",
+            "projectName": "VS_3d956f6"
+        }
+    ]
+}
