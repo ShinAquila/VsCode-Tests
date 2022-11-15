@@ -7,7 +7,7 @@ public class arrayJo {
         String names [] = {"jo","an","de","sa"};
         Boolean detect = false;
 
-        System.out.println("Enter Name ");
+        System.out.println("Input Name ");
         String nameInput = scan.nextLine();
 
         for(int i=0; i<names.length; i++){
