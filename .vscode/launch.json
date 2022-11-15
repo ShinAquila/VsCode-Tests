@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch arrayInput",
+            "request": "launch",
+            "mainClass": "CCE.arraysUwU.arrayInput",
+            "projectName": "VsCode-Tests_68b4b0e2"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
