@@ -1,4 +1,4 @@
-package CCE;
+package CCE.arraysUwU;
 import java.util.Scanner;
 
 public class arrayInput {
