@@ -18,7 +18,7 @@ public class arrayFindIndex {
             }
         }
 
-            if (nameFound == true) {
+        if (nameFound == true) {
             System.out.println("The index number for " +nameInput+ " is "+Arrays.asList(names).indexOf(nameInput));
         } else {
             System.out.println(nameInput+" not found in database");
