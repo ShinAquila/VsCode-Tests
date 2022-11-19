@@ -8,9 +8,9 @@ public class exercise04 {
 
         Scanner scan = new Scanner(System.in);
 
-        int num[] = new int[11];
-        int evenElem[] = new int[11];
-        int oddElem[] = new int[11];
+        int num[] = new int[10];
+        int evenElem[] = new int[10];
+        int oddElem[] = new int[10];
         
         System.out.println("***********INPUT***********");
         System.out.println(" ");
@@ -35,27 +35,29 @@ public class exercise04 {
         System.out.println("***********OUTPUT***********");
         System.out.println(" ");
         System.out.print("Even Elements:        ");
-        for (int i = 0; i < evenElem.length; i++) {
+        for (int i = 0; i < evenElem.length-3; i++) {
             if (evenElem[i] != 0) {
-                if (i > 0) {
+                System.out.print(evenElem[i]);
+                if (i >= 0) {
                     System.out.print(", ");
                 }
-                System.out.print(evenElem[i]);
             }
         }
+        System.out.print(evenElem[evenElem.length-3]);
         
         System.out.println(" ");
 
         System.out.print("Odd Elements:         ");
-        for (int i = 0; i < oddElem.length-2; i++) {
+        for (int i = 0; i < oddElem.length-1; i++) {
             if (oddElem[i] != 0) {
                 System.out.print(oddElem[i]);
-                if (i > 0) {
+                if (i >= 0) {
                     System.out.print(", ");
                 }
             }
         }
-        System.out.print(oddElem[9]);
+
+        System.out.print(oddElem[oddElem.length-1]);
         System.out.println(" ");
     }
 }
