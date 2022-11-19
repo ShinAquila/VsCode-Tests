@@ -1,0 +1,25 @@
+package CCE.SixTeenExercises;
+import java.util.Scanner;
+
+public class ExerDiffProdRem {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("----------INPUT----------");
+        System.out.println("Enter first number: ");
+        int num1 = scan.nextInt();
+
+        System.out.println("Enter second number: ");
+        int num2 = scan.nextInt();
+
+        System.out.println("----------OUTPUT----------");
+        int rem = num1 % num2;
+        int diff = num1 - num2;
+        int prod = num1 * num2;
+
+        System.out.println("The Remainder is "+rem);
+        System.out.println("The Difference is "+diff);
+        System.out.println("The Product is "+prod);
+        scan.close();
+    }
+}

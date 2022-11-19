@@ -5,11 +5,7 @@ import java.util.Scanner;
 public class arrayDelete {
     public static void main(String[] args) {
 
-        <dependency>
-        <groupId>org.apache.commons</groupId>
-        <artifactId>commons-lang3</artifactId>
-        <version>${version}</version>
-        </dependency>
+        
 
         Scanner scan = new Scanner(System.in);
 
