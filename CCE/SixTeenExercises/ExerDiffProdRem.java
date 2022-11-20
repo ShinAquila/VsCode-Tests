@@ -6,10 +6,10 @@ public class ExerDiffProdRem {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("----------INPUT----------");
-        System.out.println("Enter first number: ");
+        System.out.print("Enter first number:   ");
         int num1 = scan.nextInt();
 
-        System.out.println("Enter second number: ");
+        System.out.print("Enter second number:    ");
         int num2 = scan.nextInt();
 
         System.out.println("----------OUTPUT----------");
@@ -17,7 +17,12 @@ public class ExerDiffProdRem {
         int diff = num1 - num2;
         int prod = num1 * num2;
 
-        System.out.println("The Remainder is "+rem);
+        if (rem == 0) {
+            System.out.println("The Remainder is 0");
+        } else {
+            System.out.println("The Remainder is NOT 0");
+        }
+        
         System.out.println("The Difference is "+diff);
         System.out.println("The Product is "+prod);
         scan.close();
