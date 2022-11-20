@@ -1,9 +1,6 @@
-package CCE.arrayExercises;
 import java.util.Scanner;
 
-// Advance Search Names in 1D Array – Part 2
-
-public class advExercise02 {
+public class yes {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String names [] = {"Clariedhel","Jayvive","Weelyn","Lorre","Mae Ann","Nelson","Mervin","Jay","Ryan","Eric","Michael","Joy","Angelo","Marisol","Kent","Vincent"};
@@ -27,26 +24,21 @@ public class advExercise02 {
             }
 
             if (detect == true) {
-                System.out.print("NAME FOUND, Do you want to search for another name? (Y/N): ");
-                cont = scan.nextLine(); 
-                System.out.println(" ");
-                detect = false;
+                System.out.print("NAME FOUND, ");
             } else {
-                System.out.print("No Name Found, Do you want to search for another name? (Y/N): ");
-                cont = scan.nextLine(); 
-                System.out.println(" ");
-                detect = false;
+                System.out.print("No Name Found, ");
             }
 
-            
+            detect = false;
+
+            System.out.print("Do you want to search for another name? (Y/N): ");
+            cont = scan.nextLine(); 
+            System.out.println(" ");
 
         } while (cont.equals("Y"));
 
         System.out.println("SEARCHING STOPPED");
         
         scan.close();
-
-
-
     }
 }
