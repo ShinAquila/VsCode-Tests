@@ -2,6 +2,23 @@ package CCE.arrayExercises;
 import java.util.Scanner;
 
 // Advance Search Names in 1D Array – Part 2
+// Create a java program that can search a name of the students in the following list below:
+// • Clariedhel
+// • Jayvive
+// • Weelyn
+// • Lorre
+// • Mae Ann
+// • Nelson
+// • Mervin
+// • Jay
+// • Ryan
+// • Eric
+// • Michael
+// • Joy
+// • Angelo
+// • Marisol
+// • Kent
+// • Vincent
 
 public class advExercise02 {
     public static void main(String[] args) {
