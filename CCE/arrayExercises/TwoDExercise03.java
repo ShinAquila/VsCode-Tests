@@ -26,8 +26,7 @@ public class TwoDExercise03 {
 
         for (int row = 0; row < rowInput; row++) {
             for (int col = 0; col < colInput; col++) {
-                System.out.printf("%2d",tableElem[row] [col]);
-                System.out.print("\t");
+                System.out.print(tableElem[row][col]+"\t");
             }
             System.out.println("");
         }
