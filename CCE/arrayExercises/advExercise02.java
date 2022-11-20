@@ -1,6 +1,8 @@
 package CCE.arrayExercises;
 import java.util.Scanner;
 
+// Advance Search Names in 1D Array – Part 2
+
 public class advExercise02 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
