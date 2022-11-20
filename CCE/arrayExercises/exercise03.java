@@ -9,7 +9,7 @@ public class exercise03 {
         int numElements[] = {12,23,120,60,320,45,93,21,60,310};
 
         System.out.print("ELEMENTS: ");
-        for (int i = 0; i < numElements.length; i+=2) {
+        for (int i = 0; i < numElements.length-2; i+=2) {
             if (i > 0) {
                 System.out.print(", ");
             }
