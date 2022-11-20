@@ -20,11 +20,9 @@ public class advExercise02 {
             String nameInput = scan.nextLine();
             System.out.println("--------------------------------------------------------------------------");
 
-            String nameFound = "";
             for (int i = 0; i < names.length; i++) {
                 if (nameInput.equals(names[i])) {
                     detect = true;
-                    nameFound = names[i];
                 }
             }
 
