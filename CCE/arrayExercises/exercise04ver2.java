@@ -17,7 +17,7 @@ public class exercise04ver2 {
         System.out.println(" ");
 
         for (int i = 0; i < 10; i++) {
-            System.out.print("Enter a Number: ");
+           System.out.println("Enter a Number: ");
             numElements[i] = scan.nextInt();
 
             if ((numElements[i] % 2) == 0) {
