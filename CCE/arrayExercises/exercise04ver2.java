@@ -32,12 +32,6 @@ public class exercise04ver2 {
         System.out.println("***********OUTPUT***********");
         System.out.println(" ");
 
-        System.out.print("Original Elements: ");
-        for (int i = 0; i < numElements.length; i++) {
-            System.out.print(numElements[i] + " ");
-        }
-        System.out.println(" ");
-
         System.out.print("Even Elements: ");
         for (int i = 0; i < evenNum.size()-1; i++) {
             System.out.print(evenNum.get(i)+", ");

@@ -18,7 +18,6 @@ public class exercise01 {
             totalSum += numElements[i];
         }
 
-        // System.out.println("ELEMENTS: "+Arrays.toString(numElements));
         System.out.println("\nSUM: "+totalSum);
     }
 }
