@@ -29,7 +29,7 @@ public class TwoDExercise03 {
 
         for (int row = 0; row < rowInput; row++) {
             for (int col = 0; col < colInput; col++) {
-                System.out.print(tableElem[row][col]+"\t");
+                System.out.printf("%-4d",tableElem[row][col]);
             }
             System.out.println("");
         }
