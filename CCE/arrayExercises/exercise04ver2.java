@@ -2,6 +2,9 @@ package CCE.arrayExercises;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+// Ask 10 numbers from the user then determine the odd and even numbers entered by the
+// user.
+
 public class exercise04ver2 {
     public static void main(String[] args) {
         int numElements[] = new int[10];

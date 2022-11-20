@@ -1,7 +1,10 @@
 package CCE.arrayExercises;
 import java.util.Scanner;
 
-public class exercise04 {
+// Ask 10 numbers from the user then determine the odd and even numbers entered by the
+// user.
+
+public class exercise04ver1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 

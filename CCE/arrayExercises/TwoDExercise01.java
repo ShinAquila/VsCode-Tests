@@ -1,5 +1,9 @@
 package CCE.arrayExercises;
 
+// ➢ Use the table above and use it to create an initialized 2D Array
+// ➢ Complete the following program so that it computes the sum of the elements in each
+// row. And determine the largest result
+
 public class TwoDExercise01 {
     public static void main(String[] args) {
         int numTable[][] = {

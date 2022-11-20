@@ -1,5 +1,8 @@
 package CCE.arrayExercises;
 
+// ➢ Modify the program Exercise 1 so that it computes and prints the sum of each column of
+// the array. And determine the largest result.
+
 public class TwoDExercise02 {
     public static void main(String[] args) {
         int numTable[][] = {

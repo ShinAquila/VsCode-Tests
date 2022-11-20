@@ -1,6 +1,9 @@
 package CCE.arrayExercises;
 import java.util.Scanner;
 
+// ➢ Create a program that will ask the user to enter any number of columns and rows for the
+// multiplication table. Check the sample below.
+
 public class TwoDExercise03 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
