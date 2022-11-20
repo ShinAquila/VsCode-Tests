@@ -60,8 +60,5 @@ public class advExercise02 {
         System.out.println("SEARCHING STOPPED");
         
         scan.close();
-
-
-
     }
 }
