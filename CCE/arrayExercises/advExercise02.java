@@ -55,8 +55,6 @@ public class advExercise02 {
                 detect = false;
             }
 
-            
-
         } while (cont.equals("Y"));
 
         System.out.println("SEARCHING STOPPED");
