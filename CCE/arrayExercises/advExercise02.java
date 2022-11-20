@@ -27,13 +27,12 @@ public class advExercise02 {
             }
 
             if (detect == true) {
-                System.out.print("NAME FOUND, ");
+                System.out.print("NAME FOUND, Do you want to search for another name? (Y/N): ");
             } else {
-                System.out.print("No Name Found, ");
+                System.out.print("No Name Found, Do you want to search for another name? (Y/N): ");
 
             }
 
-            System.out.print("Do you want to search for another name? (Y/N): ");
             cont = scan.nextLine(); 
             System.out.println(" ");
 
