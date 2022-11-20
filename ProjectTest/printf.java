@@ -19,8 +19,8 @@ public class printf {
 
         System.out.println(" ");
 
-        System.out.printf("'%10s' %n", "pain");
-        System.out.printf("'%-10s' %n", "baeldung");
+        System.out.printf("%10s %n", "pain");
+        System.out.printf("%-10s %n", "baeldung");
 
         System.out.println(" ");
 

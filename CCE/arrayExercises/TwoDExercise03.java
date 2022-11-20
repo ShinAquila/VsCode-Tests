@@ -6,21 +6,30 @@ public class TwoDExercise03 {
         Scanner scan = new Scanner(System.in);
 
         System.out.print("Enter number of rows: ");
-        int row = scan.nextInt();
+        int rowInput = scan.nextInt();
 
         System.out.print("Enter number of columns: ");
-        int column = scan.nextInt();
+        int colInput = scan.nextInt();
+        System.out.println(" ");
 
         scan.close();
 
-        int tableElem[][] = new int[row+1][column+1];
+        int range = rowInput * colInput;
 
-        for (int i = 0; i < tableElem.length; i++) {
-            for (int j = 0; j < tableElem[i].length; j++) {
-                System.out.print(tableElem [i] [j] = (i) * (j));
-                System.out.print(" ");
+        int tableElem[][] = new int[range][range];
+
+        for (int row = 0; row < rowInput; row++) {
+            for (int col = 0; col < colInput; col++) {
+                tableElem [row] [col] = (row+1) * (col+1);
             }
-            System.out.println(" ");
+        }
+
+        for (int row = 0; row < rowInput; row++) {
+            for (int col = 0; col < colInput; col++) {
+                System.out.printf("%2d",tableElem[row] [col]);
+                System.out.print("\t");
+            }
+            System.out.println("");
         }
 
     }
