@@ -3,9 +3,6 @@ import java.util.Scanner;
 
 public class exercise04 {
     public static void main(String[] args) {
-
-        int separator = 0;
-
         Scanner scan = new Scanner(System.in);
 
         int num[] = new int[10];
@@ -17,47 +14,35 @@ public class exercise04 {
         for (int i = 0; i < 10; i++) {
             System.out.print("Enter a Number: ");
             num[i] = scan.nextInt();
-        }
-        scan.close();
 
-        for (int i = 0; i < 10; i++) {
-            separator = num[i] % 2;
-
-            if (separator == 0) {
-                evenElem[i] = num[i];
+            if ((num[i] % 2) == 0) {
+                    evenElem[i] = num[i];
             } else {
-                oddElem[i] = num[i];
+                    oddElem[i] = num[i];
             }
         }
+        scan.close();
         
         System.out.println(" ");
 
         System.out.println("***********OUTPUT***********");
         System.out.println(" ");
         System.out.print("Even Elements:        ");
-        for (int i = 0; i < evenElem.length-3; i++) {
-            if (evenElem[i] != 0) {
-                System.out.print(evenElem[i]);
-                if (i >= 0) {
-                    System.out.print(", ");
-                }
+        for (int i = 0; i < evenElem.length-1; i++) {
+            if (evenElem != null && evenElem[i] > 0) {
+                System.out.print(evenElem[i]+" ");
             }
         }
-        System.out.print(evenElem[evenElem.length-3]);
         
         System.out.println(" ");
 
         System.out.print("Odd Elements:         ");
         for (int i = 0; i < oddElem.length-1; i++) {
-            if (oddElem[i] != 0) {
-                System.out.print(oddElem[i]);
-                if (i >= 0) {
-                    System.out.print(", ");
-                }
+            if (oddElem != null && oddElem[i] > 0) {
+                System.out.print(oddElem[i]+" ");
             }
         }
 
-        System.out.print(oddElem[oddElem.length-1]);
         System.out.println(" ");
     }
 }

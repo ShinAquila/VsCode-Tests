@@ -15,7 +15,7 @@ public class TwoDExercise01 {
         for (int i = 0; i < numTable.length; i++) {
             int rowSum = 0;
 
-            for (int j = 0; j < numTable[i].length; j++) {
+            for (int j = 0; j < numTable.length; j++) {
                 rowSum += numTable[i][j];
             }
             System.out.println("Sum of Row "+ (i+1) +":         "+rowSum);
