@@ -11,9 +11,12 @@ public class advExercise02 {
         System.out.println("This is a system that can search the name of the student of ICT-TVL-B9");
         System.out.println("**************************************************************************");
 
-        System.out.print("Please enter the Student Name:      ");
-        String nameInput = scan.nextLine();
-        System.out.println("--------------------------------------------------------------------------");
+        do {
+            System.out.print("Please enter the Student Name:      ");
+            String nameInput = scan.nextLine();
+            System.out.println("--------------------------------------------------------------------------");
+        } while (detect);
+        
         scan.close();
 
 
