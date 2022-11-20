@@ -1,4 +1,4 @@
-package CCE.arraysUwU;
+package CCE.arraysPractice;
 import java.util.Scanner;
 
 public class arrayJo2 {
