@@ -26,6 +26,8 @@ public class advExercise02 {
         String names [] = {"Clariedhel","Jayvive","Weelyn","Lorre","Mae Ann","Nelson","Mervin","Jay","Ryan","Eric","Michael","Joy","Angelo","Marisol","Kent","Vincent"};
 
         String cont = "";
+        boolean searchKey = false;
+        boolean retry = true;
 
         System.out.println("SEARCH ARRAY CODE");
         System.out.println("This is a system that can search the name of the student of ICT-TVL-B9");
@@ -51,11 +53,25 @@ public class advExercise02 {
 
             detect = false;
 
-            System.out.print("Do you want to search for another name? (Y/N): ");
-            cont = scan.nextLine(); 
-            System.out.println(" ");
+            while (retry == true) {
+                System.out.print("Do you want to search for another name? (Y/N): ");
+                cont = scan.nextLine(); 
+                if (cont.equalsIgnoreCase("Y")) {
+                    searchKey = true;
+                    retry = false;
+                } else if (cont.equalsIgnoreCase("N")) {
+                    searchKey = false;
+                    retry = false;
+                } else {
+                    System.out.println("Please use a correct Indicator");
+                    retry = true;
+                }
+            } 
 
-        } while (cont.equalsIgnoreCase("Y"));
+            System.out.println(" ");
+            retry = true;
+
+        } while (searchKey == true);
 
         System.out.println("SEARCHING STOPPED");
         
