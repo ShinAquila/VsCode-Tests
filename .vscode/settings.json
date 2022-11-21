@@ -1,0 +1,12 @@
+{
+    "workbench.colorCustomizations": {
+        "[Kimbie Dark]": {
+            "activityBar.foreground": "#ffc288"
+            "activityBar.activeBackground": "#af5704",
+            "activityBar.background": "#532e0c",
+            "activityBar.border": "#d86f0c"
+            "activityBarBadge.foreground": "#ffffff"
+            "activityBarBadge.background": "#c2640d"
+        }
+}
+}
