@@ -55,7 +55,7 @@ public class advExercise02 {
             cont = scan.nextLine(); 
             System.out.println(" ");
 
-        } while (cont.equals("Y"));
+        } while (cont.equalsIgnoreCase("Y"));
 
         System.out.println("SEARCHING STOPPED");
         
