@@ -17,7 +17,7 @@ public class TwoDExercise03 {
 
         scan.close();
 
-        int range = rowInput * colInput;
+        int range = rowInput + colInput;
 
         int tableElem[][] = new int[range][range];
 
