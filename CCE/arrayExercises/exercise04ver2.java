@@ -17,7 +17,7 @@ public class exercise04ver2 {
         System.out.println(" ");
 
         for (int i = 0; i < 10; i++) {
-           System.out.println("Enter a Number: ");
+           System.out.print("Enter a Number:        ");
             numElements[i] = scan.nextInt();
 
             if ((numElements[i] % 2) == 0) {
@@ -32,7 +32,7 @@ public class exercise04ver2 {
         System.out.println("***********OUTPUT***********");
         System.out.println(" ");
 
-        System.out.print("Even Elements: ");
+        System.out.print("Even Elements:    ");
         for (int i = 0; i < evenNum.size()-1; i++) {
             System.out.print(evenNum.get(i)+", ");
         }
@@ -42,7 +42,7 @@ public class exercise04ver2 {
         System.out.println("");
 
 
-        System.out.print("Odd Elements: ");
+        System.out.print("Odd Elements:     ");
         for (int i = 0; i < oddNum.size()-1; i++) {
             System.out.print(oddNum.get(i)+", ");
         }

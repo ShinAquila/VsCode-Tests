@@ -3,22 +3,10 @@ import java.util.Scanner;
 
 // Advance Search Names in 1D Array – Part 2
 // Create a java program that can search a name of the students in the following list below:
-// • Clariedhel
-// • Jayvive
-// • Weelyn
-// • Lorre
-// • Mae Ann
-// • Nelson
-// • Mervin
-// • Jay
-// • Ryan
-// • Eric
-// • Michael
-// • Joy
-// • Angelo
-// • Marisol
-// • Kent
-// • Vincent
+// • Clariedhel     • Jayvive       • Weelyn        • Lorre
+// • Mae Ann        • Nelson        • Mervin        • Jay
+// • Ryan           • Eric          • Michael       • Joy
+// • Angelo         • Marisol       • Kent          • Vincent
 
 public class advExercise02 {
     public static void main(String[] args) {
@@ -46,15 +34,14 @@ public class advExercise02 {
             }
 
             if (detect == true) {
-                System.out.print("NAME FOUND, ");
+                System.out.print("NAME FOUND, Do you want to search for another name? (Y/N):        ");
             } else {
-                System.out.print("No Name Found, ");
+                System.out.print("No Name Found, Do you want to search for another name? (Y/N):     ");
             }
 
             detect = false;
 
             while (retry == true) {
-                System.out.print("Do you want to search for another name? (Y/N): ");
                 cont = scan.nextLine(); 
                 if (cont.equalsIgnoreCase("Y")) {
                     searchKey = true;

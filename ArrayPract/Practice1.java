@@ -2,24 +2,20 @@ package ArrayPract;
 
 public class Practice1 {
     public static void main(String[] args) {
-        int num[] = {88,86,98,62,88};
+        int num[] = {42,88,34,46,98,25,62,88,12,34,100};
 
         int large = 0;
         int secLarge = 0;
         
         for (int i = 0; i < num.length; i++) {
-            for (int j = 0; j < num.length; j++) {
-                if (num[i]>num[j] && num[i] > large) {
-                    large = num[i];
-                }
+            if (num[i] > large) {
+                large = num[i];
             }
         }
 
         for (int i = 0; i < num.length; i++) {
-            if (num[i] > secLarge) {
-                if (num[i] != large) {
-                    secLarge = num[i];
-                }
+            if (num[i] > secLarge && num[i] != large) {
+                secLarge = num[i];
             }
         }
     
