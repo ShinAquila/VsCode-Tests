@@ -1,4 +1,6 @@
-package ArrayPracticeFinal;
+package ArrayAndLooping;
+
+import java.util.Arrays;
 
 public class Practice3 {
     public static void main(String[] args) {
@@ -18,6 +20,7 @@ public class Practice3 {
             }
         }
 
+        System.out.println(Arrays.toString(num));
         System.out.println("The minimum value in the array is:      "+small);
         System.out.println("The maximum value in the array is:      "+large);
     }

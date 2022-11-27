@@ -1,8 +1,10 @@
-package ArrayPracticeFinal;
+package ArrayAndLooping;
+
+import java.util.Arrays;
 
 public class Practice1 {
     public static void main(String[] args) {
-        int num[] = {42,88,34,46,98,25,62,88,12,34,100};
+        int num[] = {100,42,88,34,46,98,25,62,88,12,34,100};
 
         int large = 0;
         int secLarge = 0;
@@ -19,6 +21,7 @@ public class Practice1 {
             }
         }
     
+        System.out.println(Arrays.toString(num));
         System.out.println("Second Largest Number: "+secLarge);
     }
 }

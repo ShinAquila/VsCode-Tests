@@ -11,6 +11,7 @@ public class Exer3 {
         System.out.print("Enter the amount of change from 1 to 99:      ");
         int cents = scan.nextInt();
         System.out.println();
+        scan.close();
 
         if (cents >= 1 && cents <= 99) {
             quarter = cents/25;
@@ -25,11 +26,12 @@ public class Exer3 {
             penny = (cents-quarterCoins-dimeCoins-nickelCoins)/1;
             pennyCoins = penny * 1;
     
-            System.out.println(cents+" cents in coins:");
-            System.out.println(quarter+" quarters            "+quarterCoins);
-            System.out.println(dime+" dime                 "+dimeCoins);
-            System.out.println(nickel+" nickel                 "+nickelCoins);
-            System.out.println(penny+" penny                 "+pennyCoins);
+            System.out.println(cents+" Cents in coins:");
+            
+            System.out.printf("%1s %-15s %7s %n",quarter," quarters ",quarterCoins);
+            System.out.printf("%1s %-15s %7s %n",dime," dime ",dimeCoins);
+            System.out.printf("%1s %-15s %7s %n",nickel," nickel ",nickelCoins);
+            System.out.printf("%1s %-15s %7s %n",penny," penny ",pennyCoins);
         } else {
             System.out.println("Invalid-Maximum is only 1-99");
         }
