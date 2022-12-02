@@ -1,4 +1,4 @@
-package CCE.arrayExercises;
+package CCEPrac.arrayExercises;
 import java.util.Scanner;
 
 // Create a java program that can search a name of the students in the following list below:
