@@ -1,4 +1,4 @@
-package CCE.arrayExercises;
+package CCEPrac.arrayExercises;
 import java.util.Scanner;
 
 // ➢ Create a program that will ask the user to enter any number of columns and rows for the

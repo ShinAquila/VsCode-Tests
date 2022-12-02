@@ -1,4 +1,4 @@
-package CCE.arrayExercises;
+package CCEPrac.arrayExercises;
 import java.util.ArrayList;
 import java.util.Scanner;
 

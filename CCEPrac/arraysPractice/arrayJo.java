@@ -1,4 +1,4 @@
-package CCE.arraysPractice;
+package CCEPrac.arraysPractice;
 import java.util.Scanner;
 
 public class arrayJo {

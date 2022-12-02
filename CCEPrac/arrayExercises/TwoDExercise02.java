@@ -1,4 +1,4 @@
-package CCE.arrayExercises;
+package CCEPrac.arrayExercises;
 
 // ➢ Modify the program Exercise 1 so that it computes and prints the sum of each column of
 // the array. And determine the largest result.

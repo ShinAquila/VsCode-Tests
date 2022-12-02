@@ -1,4 +1,4 @@
-package CCE.arrayExercises;
+package CCEPrac.arrayExercises;
 import java.util.Scanner;
 
 // Ask 10 numbers from the user then determine the odd and even numbers entered by the

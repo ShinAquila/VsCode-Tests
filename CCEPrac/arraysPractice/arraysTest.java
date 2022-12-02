@@ -1,4 +1,4 @@
-package CCE.arraysPractice;
+package CCEPrac.arraysPractice;
 import java.util.ArrayList;
 
 public class arraysTest {

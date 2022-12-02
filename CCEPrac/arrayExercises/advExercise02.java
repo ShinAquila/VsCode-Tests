@@ -1,4 +1,4 @@
-package CCE.arrayExercises;
+package CCEPrac.arrayExercises;
 import java.util.Scanner;
 
 // Advance Search Names in 1D Array – Part 2

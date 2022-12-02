@@ -1,4 +1,4 @@
-package CCE.SixTeenExercises;
+package CCEPrac.SixTeenExercises;
 import java.util.Scanner;
 
 public class ExerDiffProdRem {

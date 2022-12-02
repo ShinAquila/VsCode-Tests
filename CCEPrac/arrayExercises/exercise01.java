@@ -1,4 +1,4 @@
-package CCE.arrayExercises;
+package CCEPrac.arrayExercises;
 
 //Exercise 1 - Sum of an Initialized Elements
 //Give an array of integer with a length of 10, or create a java program that display all

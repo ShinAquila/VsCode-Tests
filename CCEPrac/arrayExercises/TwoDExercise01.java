@@ -1,4 +1,4 @@
-package CCE.arrayExercises;
+package CCEPrac.arrayExercises;
 
 // ➢ Use the table above and use it to create an initialized 2D Array
 // ➢ Complete the following program so that it computes the sum of the elements in each

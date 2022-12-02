@@ -1,4 +1,4 @@
-package CCE.arrayExercises;
+package CCEPrac.arrayExercises;
 
 //Exercise 3 - Reversed Display
 //Having the same elements from Exercise 1, create a java program that display the elements
