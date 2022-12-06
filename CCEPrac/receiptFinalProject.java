@@ -54,7 +54,8 @@ public class receiptFinalProject {
         int cartPrice [] = new int[numItems];
 
         for (int i = 0; i < numItems; i++) {
-            System.out.printf("%-29s","Enter Item Name:");
+            int count = i+1;
+            System.out.printf("%-28s ","["+count+"] Enter Item Name:");
             itemName = scanString.nextLine();
             cartProduct[i] = itemName;
     
@@ -114,7 +115,7 @@ public class receiptFinalProject {
 
         System.out.printf("%35s %n %n","PURCHASE RECEIPT");
         System.out.printf("%13s %1s","Cashier: ",cashierName);
-        System.out.printf("%27s %1s %n","O.R. No.: ",numOR);
+        System.out.printf("%27s %1s %n","O.R. No: ",numOR);
         System.out.printf("%10s %1s %n %n","Date: ",date.format(dateToday));
         System.out.printf("%2s %1s %n"," ",receiptLine1);
 
