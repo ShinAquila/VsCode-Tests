@@ -13,10 +13,10 @@ public class receiptFinalProject {
         String cashierName = "";
         String numOR = "";
         String itemName = "";
-        int itemPrice = 0;
         int itemQuant = 0;
         int numItems = 0;
-        int totalPrice = 0;
+        double totalPrice = 0;
+        double itemPrice = 0;
         double subtotal = 0;
         double vat = 0;
         double totalPay = 0;
@@ -51,7 +51,8 @@ public class receiptFinalProject {
 
         int cartQuantity [] = new int[numItems];
         String cartProduct [] = new String[numItems];
-        int cartPrice [] = new int[numItems];
+        double cartPrice [] = new double[numItems];
+        double cartProductPrice [] = new double[numItems];
 
         for (int i = 0; i < numItems; i++) {
             int count = i+1;
@@ -60,7 +61,7 @@ public class receiptFinalProject {
             cartProduct[i] = itemName;
     
             System.out.printf("%-29s","Enter Item Price:");
-            itemPrice = scanInt.nextInt();
+            itemPrice = scanInt.nextDouble();
             cartPrice[i] = itemPrice;
     
             System.out.printf("%-29s","Enter Item Quantity:");
@@ -72,6 +73,7 @@ public class receiptFinalProject {
 
         for (int i = 0; i < numItems; i++) {
             totalPrice = cartPrice[i] * cartQuantity[i];
+            cartProductPrice[i] = totalPrice;
             subtotal += totalPrice;
         }
 
@@ -119,10 +121,13 @@ public class receiptFinalProject {
         System.out.printf("%10s %1s %n %n","Date: ",date.format(dateToday));
         System.out.printf("%2s %1s %n"," ",receiptLine1);
 
+        
+
         System.out.printf("%10s %10s %30s %n","Qty.","Item/s","Price/s");
         System.out.printf("%4s %1s %n"," ",receiptLine2);
         for (int i = 0; i < numItems; i++) {
-            System.out.printf("%6s %-8s %-30s %1s %n", " ", cartQuantity[i] , cartProduct[i] , cartPrice[i]);
+            String prodPrice = formatReceipt.format(cartProductPrice[i]);
+            System.out.printf("%6s %-8s %-30s %1s %n", " ", cartQuantity[i] , cartProduct[i] , prodPrice);
         }
 
         String newSubTotal = formatReceipt.format(subtotal);
