@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Practice1 {
     public static void main(String[] args) {
-        int num[] = {100,42,88,34,46,98,25,62,88,12,34,100};
+        int num[] = {85,67,79,97,64};
 
         int large = 0;
         int secLarge = 0;

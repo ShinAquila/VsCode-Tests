@@ -20,7 +20,7 @@ public class payrollTest {
             do {
                 foundEmployee = false;
                 System.out.println("*".repeat(80));
-                System.out.print("Enter Employee ID: ");
+                System.out.printf("%-30s","Enter Employee ID: ");
                 employeeIDsearch = scan.nextInt();
                 System.out.println("*".repeat(80));
         
@@ -33,32 +33,36 @@ public class payrollTest {
                 }
             
                 if (foundEmployee != true) {
-                    clrscr();
+                    try {
+                        if (System.getProperty("os.name").contains("Windows"))
+                            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+                    } catch (Exception E) {}
                     System.out.printf("ID:%d not found in Database %n", employeeIDsearch);
                     System.out.println("Please Try Again...");
                 }
             } while (foundEmployee != true);
             
-            System.out.print("Payroll for Date: ");
+            System.out.printf("%-30s","Payroll for Date: ");
             String payrollDate = scan1.nextLine();
             
-            System.out.print("Rate per Day: ");
+            System.out.printf("%-30s","Rate per Day: ");
             int RPD = scan.nextInt();
-            System.out.print("SSS Contribution: ");
+            System.out.printf("%-30s","SSS Contribution: ");
             int sss = scan.nextInt();
-            System.out.print("Pagibig Contribution: ");
+            System.out.printf("%-30s","Pagibig Contribution: ");
             int pagibig = scan.nextInt();
-            System.out.print("PhilHealth Contribution: ");
+            System.out.printf("%-30s","PhilHealth Contribution: ");
             int philhealth = scan.nextInt();
+            System.out.println();
 
 
-            System.out.print("Number of days Worked: ");
+            System.out.printf("%-30s","Number of days Worked: ");
             int daysWork = scan.nextInt();
-            System.out.print("Number of hours Late: ");
+            System.out.printf("%-30s","Number of hours Late: ");
             int hoursLate = scan.nextInt();
-            System.out.print("Number of hours Undertime: ");
+            System.out.printf("%-30s","Number of hours Undertime: ");
             int hoursUndertime = scan.nextInt();
-            System.out.print("Number of days Absent: ");
+            System.out.printf("%-30s","Number of days Absent: ");
             int daysAbsent = scan.nextInt();
             
 
@@ -72,24 +76,27 @@ public class payrollTest {
             int takehomePay = basicPay - deduction;
     
             clrscr();
-            System.out.println("-".repeat(80));
+            System.out.println("*".repeat(80));
             System.out.printf("%d: %s %n",employeeIDsearch, nameEmployee);
-            System.out.printf("%20s %40s %n %n","Period as of: ",payrollDate);
+            System.out.printf("%20s %1s %n %n","Period as of: ",payrollDate);
 
             System.out.println("Income");
-            System.out.printf("%1s %40d %n %n","Basic Pay",basicPay);
-            System.out.printf("%1s %40d %n %n","Total Income", basicPay);
+            System.out.printf("%-30s %1d %n %n","Basic Pay",basicPay);
+            System.out.printf("%40s %n","-".repeat(10));
+            System.out.printf("%-30s %1d %n %n","Total Income", basicPay);
+            System.out.println();
     
             System.out.println("Deduction");
-            System.out.printf("%1s %40d %n","SSS Contribution",sss);
-            System.out.printf("%1s %40d %n","Pagibig Contribution",pagibig);
-            System.out.printf("%1s %40d %n","PhilHealth Contribution",philhealth);
-            System.out.printf("%1s %40d %n","Late",late);
-            System.out.printf("%1s %40d %n","Undertime",undertime);
-            System.out.printf("%1s %40d %n %n","Absent",absent);
+            System.out.printf("%-30s %1d %n","SSS Contribution",sss);
+            System.out.printf("%-30s %1d %n","Pagibig Contribution",pagibig);
+            System.out.printf("%-30s %1d %n","PhilHealth Contribution",philhealth);
+            System.out.printf("%-30s %1d %n","Late",late);
+            System.out.printf("%-30s %1d %n","Undertime",undertime);
+            System.out.printf("%-30s %1d %n %n","Absent",absent);
+            System.out.println();
 
-            System.out.printf("%1s %40d %n %n","Total Deduction",deduction);
-            System.out.printf("%1s %40d %n %n","Take Home Pay",takehomePay);
+            System.out.printf("%-30s %1d %n %n","Total Deduction",deduction);
+            System.out.printf("%-30s %1d %n %n","Take Home Pay",takehomePay);
 
 
             System.out.println();
