@@ -34,7 +34,7 @@ public class receiptFinalProject {
 
 
 
-        System.out.println("\t PURCHACE RECEIPT SYSTEM");
+        System.out.println("\t PURCHASE RECEIPT SYSTEM");
         System.out.printf("%30s %n","INPUT DETAILS BELOW");
 
         System.out.println(inputLine1);
