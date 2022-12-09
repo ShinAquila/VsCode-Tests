@@ -40,6 +40,7 @@ public class receiptFinalProject {
         System.out.println(inputLine1);
         System.out.printf("%-29s","Enter Cashier Name:");
         cashierName = scanString.nextLine();
+        
         System.out.printf("%-29s","Enter O.R. No:");
         numOR = scanString.nextLine();
         System.out.println(inputLine1);
@@ -47,7 +48,7 @@ public class receiptFinalProject {
         System.out.printf("%-29s","Enter Number of Items:");
         numItems = scanInt.nextInt();
         System.out.println(inputLine1);
-
+        
 
         int cartQuantity [] = new int[numItems];
         String cartProduct [] = new String[numItems];

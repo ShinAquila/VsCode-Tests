@@ -8,7 +8,7 @@ public class payrollTest {
         boolean foundEmployee = true;
         String payrollContinue = "";
         String nameEmployee = "";
-        int idFound = 0;
+        // int idFound = 0;
         int i = 0;
         int employeeIDsearch = 0;
 
@@ -28,7 +28,7 @@ public class payrollTest {
                     if (employeeIDsearch == employeeID[i]) {
                         foundEmployee = true;
                         nameEmployee = employeeName[i];
-                        idFound = i;
+                        // idFound = i;
                     }
                 }
             
