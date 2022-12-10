@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch receiptFinalProject",
+            "request": "launch",
+            "mainClass": "CCEPrac.receiptFinalProject",
+            "projectName": "VsCode-Tests_ceb7da8e"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
