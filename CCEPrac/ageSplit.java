@@ -17,8 +17,8 @@ public class ageSplit {
         System.out.println();
         do {
             try {
-                System.out.println("Sample Format (MM/dd/yyyy) (03/25/2000)");
-                System.out.print("Enter Birthday : ");
+                System.out.println("Sample Format   (03/25/2000)");
+                System.out.print("Enter Birthday:  ");
                 birthdayInput = scan.nextLine();
                 System.out.println();
                 dateFormat.parse(birthdayInput);
@@ -50,8 +50,8 @@ public class ageSplit {
         */
 
         int ageYear = currentDateArray[2] - BdayArray[2];
-        if (currentDateArray[0] >= BdayArray[0]) {
-            if (BdayArray[1] > currentDateArray[1]) {
+        if (currentDateArray[1] < BdayArray[1]) {
+            if (currentDateArray[0] >= BdayArray[0]) {
                 ageYear = ageYear - 1;
             }
         }
