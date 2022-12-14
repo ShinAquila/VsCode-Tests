@@ -14,10 +14,10 @@ public class ageSplit {
         String birthdayInput = "";
         
         System.out.println("Current Date: "+CurrentDateString);
+        System.out.println("Sample Format   (03/25/2000)");
         System.out.println();
         do {
             try {
-                System.out.println("Sample Format   (03/25/2000)");
                 System.out.print("Enter Birthday:  ");
                 birthdayInput = scan.nextLine();
                 dateFormat.parse(birthdayInput);
