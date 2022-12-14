@@ -7,21 +7,22 @@ public class ageSplit {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("MM/dd/yyyy");
-        LocalDate now = LocalDate.now();
-        String currentDate = dateFormat.format(now);
+        LocalDate DateNow = LocalDate.now();
+        String CurrentDateString = dateFormat.format(DateNow);
 
         boolean dateInvalid = true;
         String birthdayInput = "";
         
-        System.out.println("Current Date: "+currentDate);
+        System.out.println("Current Date: "+CurrentDateString);
         System.out.println();
         do {
             try {
                 System.out.println("Sample Format   (03/25/2000)");
                 System.out.print("Enter Birthday:  ");
                 birthdayInput = scan.nextLine();
-                System.out.println();
                 dateFormat.parse(birthdayInput);
+                
+                System.out.println();
                 dateInvalid = false;
             } catch (DateTimeException e) {
                 System.out.println("Error Try Again");
@@ -30,12 +31,12 @@ public class ageSplit {
         } while (dateInvalid);
         scan.close();
         
-        String bDay[] = birthdayInput.split("/");
+        String BDaySplit[] = birthdayInput.split("/");
 
-        int BdayArray[] = new int[3];
+        int BDayInteger[] = new int[3];
         
-        for (int i = 0; i < bDay.length; i++) {
-            BdayArray[i] = Integer.parseInt(bDay[i]);
+        for (int i = 0; i < BDaySplit.length; i++) {
+            BDayInteger[i] = Integer.parseInt(BDaySplit[i]);
         }
         
         /*  0 - Month 
@@ -43,9 +44,9 @@ public class ageSplit {
             2 - Year
         */
 
-        LocalDate pdate = LocalDate.of(BdayArray[2], BdayArray[0], BdayArray[1]);
+        LocalDate BirthDate = LocalDate.of(BDayInteger[2], BDayInteger[0], BDayInteger[1]);
 
-        Period age = Period.between(pdate, now);
+        Period age = Period.between(BirthDate, DateNow);
         System.out.printf("Age is:  %d years, %d months and %d days old.\n", age.getYears(), age.getMonths(), age.getDays());
     }
 }
