@@ -26,6 +26,7 @@ public class ageSplit {
                 dateInvalid = false;
             } catch (DateTimeException e) {
                 System.out.println("Error Try Again");
+                System.out.println();
                 dateInvalid = true;
             }
         } while (dateInvalid);
