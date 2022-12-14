@@ -6,7 +6,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class receiptFinalProject {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Scanner scanString = new Scanner(System.in);
         Scanner scanInt = new Scanner(System.in);
 
@@ -22,6 +22,7 @@ public class receiptFinalProject {
         double totalPay = 0;
         double custPay = 0;
         double change = 0;
+        boolean toLoop = true;
 
         String inputLine1 = "*".repeat(41);
         String inputLine2 = "-".repeat(41);
@@ -46,7 +47,18 @@ public class receiptFinalProject {
         System.out.println(inputLine1);
 
         System.out.printf("%-29s","Enter Number of Items:");
-        numItems = scanInt.nextInt();
+        while (toLoop) {
+            try {
+                numItems = Integer.parseInt(scanString.nextLine());    
+                toLoop = false;
+            }
+            catch (NumberFormatException NFEx) {
+                System.out.print("Invalid Integer. Try again...");
+                Thread.sleep(2000);
+                System.out.print("\b".repeat(50));
+                System.out.printf("%-29s","Enter Number of Items:");
+            }
+        }
         System.out.println(inputLine1);
         
 
@@ -61,13 +73,37 @@ public class receiptFinalProject {
             itemName = scanString.nextLine();
             cartProduct[i] = itemName;
     
+            toLoop = true;
             System.out.printf("%-29s","Enter Item Price:");
-            itemPrice = scanInt.nextDouble();
-            cartPrice[i] = itemPrice;
+            while (toLoop) {
+                try {
+                    itemPrice = Double.parseDouble(scanString.nextLine());
+                    toLoop = false;
+                    cartPrice[i] = itemPrice;
+                    
+                } catch (NumberFormatException NFEx) {
+                    System.out.print("Invalid Integer. Try again...");
+                    Thread.sleep(2000);
+                    System.out.print("\b".repeat(50));
+                    System.out.printf("%-29s","Enter Item Price:");
+                }
+            }
     
+            toLoop = true;
             System.out.printf("%-29s","Enter Item Quantity:");
-            itemQuant = scanInt.nextInt();
-            cartQuantity[i] = itemQuant;
+            while (toLoop) {
+                try {
+                    itemQuant = Integer.parseInt(scanString.nextLine());
+                    toLoop = false;
+                    cartQuantity[i] = itemQuant;
+                    
+                } catch (NumberFormatException NFEx) {
+                    System.out.print("Invalid Integer. Try again...");
+                    Thread.sleep(2000);
+                    System.out.print("\b".repeat(50));
+                    System.out.printf("%-29s","Enter Item Quantity:");
+                }
+            }
     
             System.out.println(inputLine2);
         }
@@ -84,13 +120,31 @@ public class receiptFinalProject {
 
         String newTotalPay = formatReceipt.format(totalPay);
 
-        System.out.printf("%1s %16s %2s %n","TOTAL PAYMENT: ","Php",newTotalPay);
+        System.out.printf("%-28s %2s %n","TOTAL PAYMENT: ","Php "+newTotalPay);
         System.out.println(inputLine1);
 
-        do {
-            System.out.printf("%-28s %2s","Enter Customer Payment: ","Php ");
-            custPay = scanInt.nextDouble();
-        } while (custPay < totalPay);
+        toLoop = true;
+        System.out.printf("%-28s %2s","Enter Customer Payment: ","Php ");
+        while (toLoop) {
+            try {
+                do {
+                    custPay = Double.parseDouble(scanString.nextLine());
+                    if (custPay < totalPay) {
+                        System.out.print("Payment Low. Try again...");
+                        Thread.sleep(2000);
+                        System.out.print("\b".repeat(50));
+                        System.out.printf("%-28s %2s","Enter Customer Payment: ","Php ");
+                    }
+                } while (custPay < totalPay);
+                toLoop = false;
+                
+            } catch (NumberFormatException NFEx) {
+                System.out.print("Invalid Integer. Try again...");
+                Thread.sleep(2000);
+                System.out.print("\b".repeat(50));
+                System.out.printf("%-28s %2s","Enter Customer Payment: ","Php ");
+            }
+        }
 
         scanInt.close();
         scanString.close();
@@ -108,8 +162,6 @@ public class receiptFinalProject {
             }
         } catch (IOException | InterruptedException ex) {}
 
-
-        
         System.out.printf("%36s %n","Gaisano Grand Mall");
         System.out.printf("%41s %n","Mc.Arthur Highway, Digos City");
         System.out.printf("%42s %n","Tel. #: 553-2847 Fax: 679652382");
@@ -117,15 +169,15 @@ public class receiptFinalProject {
         System.out.printf("%34s %n %n","RCB: 529873290");
 
         System.out.printf("%35s %n %n","PURCHASE RECEIPT");
-        System.out.printf("%13s %1s","Cashier: ",cashierName);
-        System.out.printf("%27s %1s %n","O.R. No: ",numOR);
-        System.out.printf("%10s %1s %n %n","Date: ",date.format(dateToday));
+        System.out.print("    Cashier: "+cashierName);
+        System.out.print("\t\t    O.R. No: "+numOR);
+        System.out.println("\n    Date: "+date.format(dateToday));
         System.out.printf("%2s %1s %n"," ",receiptLine1);
 
         
 
-        System.out.printf("%10s %10s %30s %n","Qty.","Item/s","Price/s");
-        System.out.printf("%4s %1s %n"," ",receiptLine2);
+        System.out.print("      Qty.\t"+"Item/s\t\t\t     "+"Price/s");
+        System.out.println("\n     "+receiptLine2);
         for (int i = 0; i < numItems; i++) {
             String prodPrice = formatReceipt.format(cartProductPrice[i]);
             System.out.printf("%6s %-8s %-30s %1s %n", " ", cartQuantity[i] , cartProduct[i] , prodPrice);
@@ -136,13 +188,13 @@ public class receiptFinalProject {
         String newCustPay = formatReceipt.format(custPay);
         String newChange = formatReceipt.format(change);
 
-        System.out.printf("%2s %1s %n"," ",receiptLine1);
-        System.out.printf("%14s %31s %1s %n %n","SUBTOTAL","Php",newSubTotal);
-        System.out.printf("%13s %32s %1s %n %n","VAT(5%)","Php",newVAT);
-        System.out.printf("%11s %34s %1s %n %n","TOTAL","Php",newTotalPay);
-        System.out.printf("%10s %35s %1s %n","CASH","Php",newCustPay);
-        System.out.printf("%12s %33s %1s %n %n","CHANGE","Php",newChange);
+        System.out.println("   "+receiptLine1);
+        System.out.print("      "+"SUBTOTAL\t\t\t\t   "+"Php "+newSubTotal);
+        System.out.print("\n\n      "+"VAT(5%)\t\t\t\t   "+"Php "+newVAT);
+        System.out.print("\n\n      "+"TOTAL\t\t\t\t   "+"Php "+newTotalPay);
+        System.out.print("\n\n      "+"CASH\t\t\t\t   "+"Php "+newCustPay);
+        System.out.print("\n      "+"CHANGE\t\t\t\t   "+"Php "+newChange);
 
-        System.out.printf("%15s %1s %n"," ","Thank you for Shopping!");
+        System.out.print("\n\n\t\tThank you for Shopping!\n");
     }
 }
