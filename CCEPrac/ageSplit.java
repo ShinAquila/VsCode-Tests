@@ -21,7 +21,7 @@ public class ageSplit {
                 System.out.print("Enter Birthday:  ");
                 birthdayInput = scan.nextLine();
                 dateFormat.parse(birthdayInput);
-                
+
                 System.out.println();
                 dateInvalid = false;
             } catch (DateTimeException e) {
@@ -47,6 +47,6 @@ public class ageSplit {
         LocalDate BirthDate = LocalDate.of(BDayInteger[2], BDayInteger[0], BDayInteger[1]);
 
         Period age = Period.between(BirthDate, DateNow);
-        System.out.printf("Age is:  %d years, %d months and %d days old.\n", age.getYears(), age.getMonths(), age.getDays());
+        System.out.printf("Age is: %d years, %d months and %d days old.\n", age.getYears(), age.getMonths(), age.getDays());
     }
 }
