@@ -49,7 +49,7 @@ public class receiptFinalProject {
         System.out.printf("%-29s","Enter Number of Items:");
         while (toLoop) {
             try {
-                numItems = Integer.parseInt(scanString.nextLine());
+                numItems = Integer.parseInt(scanString.nextLine());    
                 toLoop = false;
             }
             catch (NumberFormatException NFEx) {
