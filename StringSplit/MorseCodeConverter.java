@@ -78,7 +78,7 @@ public class MorseCodeConverter {
                     }
                 } catch (NullPointerException NPex) {
                     System.out.println();
-                    System.out.println("Not valid");
+                    System.out.println("Not valid. System Stopped Forcefully.");
                 }
                 System.out.println();
 
@@ -110,7 +110,7 @@ public class MorseCodeConverter {
                     }
                 } catch (NullPointerException NPex) {
                     System.out.println();
-                    System.out.println("Not valid");
+                    System.out.println("Not valid. System Stopped Forcefully.");
                 }
                 System.out.println();
 
