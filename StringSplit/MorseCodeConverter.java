@@ -82,7 +82,7 @@ public class MorseCodeConverter {
                 }
                 System.out.println();
 
-
+            //Category 1 - Morse Code to Texts
             } else if (category.equals("1")) {
                 System.out.println("\nYou selected the Category 1 - Convert Morse Code to Texts");
 
