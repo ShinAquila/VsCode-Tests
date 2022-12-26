@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch tictactoe",
+            "request": "launch",
+            "mainClass": "CCEPrac.tictactoe",
+            "projectName": "VsCode-Tests_91634b57"
+        },
+        {
+            "type": "java",
             "name": "Launch receiptFinalProject",
             "request": "launch",
             "mainClass": "CCEPrac.receiptFinalProject",
