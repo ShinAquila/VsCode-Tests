@@ -1,4 +1,4 @@
-package CCEPrac;
+package CodePractices;
 
 import java.util.Scanner;
 import java.io.IOException;

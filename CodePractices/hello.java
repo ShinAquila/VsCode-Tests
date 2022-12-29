@@ -1,4 +1,4 @@
-package CCEPrac;
+package CodePractices;
 
 public class hello {
     
