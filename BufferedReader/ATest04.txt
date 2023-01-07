@@ -1,0 +1,7 @@
+Apple
+Mango
+Orange
+
+20
+15
+17
